@@ -24,6 +24,7 @@ THE DEVELOPER OF THIS SOFWARE IS NOT RESPONSIBLE FOR ANY ILLEGAL ACTIVITY PERFOR
 | <a href="https://github.com/NxRoot/NATxPLOIT/releases"><img style="min-width: 40px;min-height: 40px; width: 40px;" src="https://i.ibb.co/53CzcMg/natxploit-2.png"/></a> | Download the latest version   | [Download](https://github.com/NxRoot/NATxPLOIT/releases)    |
 
 ## How to create your own modules
+
 * Modules must be placed inside the `scripts` folder:
 <img src="https://i.ibb.co/GfBYqCXk/Captura-de-ecr-2025-04-18-232832.png"/>
 
@@ -50,6 +51,30 @@ THE DEVELOPER OF THIS SOFWARE IS NOT RESPONSIBLE FOR ANY ILLEGAL ACTIVITY PERFOR
     ]
 }
 ```
+
+* The `ui.js` file allows you to inject UI components after the script is executed:
+```jsx
+// The 'result.message' variable contains the string output returned by your script.
+
+const base64String = result.message;
+
+// Create image element
+const img = document.createElement("img");
+img.src = "data:image/png;base64," + base64String;
+img.style.position = "fixed";
+img.style.top = 0;
+img.style.left = 0;
+img.style.width = "100%";
+img.style.height = "100%";
+
+// Close UI
+img.onclick = () => img.remove();
+
+// Inject UI
+document.body.appendChild(img);
+
+```
+
 
 ## &nbsp;
 ⭐ If you find this useful!
