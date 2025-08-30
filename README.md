@@ -3,8 +3,6 @@
 
 Take control of other devices using Reverse NAT Traversal
 
-<img src="https://i.ibb.co/FLrnsRN0/NATx-PLOIT-5.png" width="70%">
-
 ## BY USING THIS SOFTWARE YOU AGREE TO THE FOLLOWING
 THE DEVELOPER OF THIS SOFWARE IS NOT RESPONSIBLE FOR ANY ILLEGAL ACTIVITY PERFORMED BY ANY USER.
 
